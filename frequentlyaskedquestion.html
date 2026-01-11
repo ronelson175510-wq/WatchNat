@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: white;">
+ <h1 style="color: black;">Frequently Asked Questions</h1>
+
+<button class="accordion">How We Use Your Personal Information?</button>
+<div class="panel">
+  <p>We use your personal information for the following purposes:</p> 
+<ul>
+    <li>To provide and improve our services</li>
+    <li>To communicate with you about our services</li>
+    <li>To personalize your experience on our website</li>
+    <li>To fulfill your requests for information or services</li>
+    <li>To comply with legal and regulatory requirements</li>   
+</ul>
+</div>
+
+<button class="accordion">How We Protect Your Personal Information?</button>
+<div class="panel">
+  <p>We implement various security measures to protect your personal information from unauthorized access, disclosure, alteration, or destruction.</p>
+  </p>Disclosures of Your Personal Information</p>   
+  <p>We may disclose your personal information to third parties in the following circumstances:</p>
+<ul>
+    <li>With your consent</li>
+    <li>To comply with legal and regulatory requirements</li>
+    <li>To protect the rights, property, or safety of us, our customers, or others</li>
+    <li>To provide our services to third parties</li>   
+</ul>
+</div>
+<button class="accordion">What Is The Best Way To Contact Us?</button>
+<div class="panel">
+  <p>The fastest way to contact us is through our Live Chat. To find the live chat, go to the bottom of the home page, then click in the <a href="./contact.html" style="color: black;"> Contact Us</a> section. The live chat icon will appear at the buttom right of the page.
+  </p>
+  <p>Or you can contact us via email and our team will response in the next 24 hours.</p>
+  <p>When sending an email, always remeber to inclube your name and your Username so our team can assist you better and quicker.</p>
+</div>
+<button class="accordion">Is WatchNat App Avalaible In All Countries In The World?</button>
+<div class="panel">
+    <p>So far, our platform is  only avalaible in the US and the Carribean. Soon we will be avalaible in Africa. Stay connected with us!</p>
+</div>
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+   
+</body>
+</html>
